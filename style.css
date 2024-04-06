@@ -542,6 +542,58 @@ video {
   color: white;
 }
 
+.page5{
+  margin: 80px 0;
+  width: 100%;
+  height: 70vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.page5 .slider{
+  width: 100%;
+  height: 55vh;
+  rotate: -4deg;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.img-slide{
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.sliders{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.img-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 footer {
   width: 100%;
   height: 60vh;
