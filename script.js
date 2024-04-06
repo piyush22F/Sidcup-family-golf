@@ -45,10 +45,19 @@ aTags.forEach(function (elem) {
   });
 });
 
-let Tags= document.querySelectorAll(".footer-1 a")
-console.log(Tags);
+let circle = document.querySelector(".circle");
 
-
+circle.addEventListener("mouseenter", function () {
+  circle.style.width = "80px";
+  circle.style.height = "80px";
+  circle.style.backgroundColor = "rgb(149 193 30 /40%)";
+  
+})
+circle.addEventListener("mouseleave", function () {
+  circle.style.width="170px"
+  circle.style.height = "170px"
+  circle.style.backgroundColor = "transparent"
+})
 
 
 
